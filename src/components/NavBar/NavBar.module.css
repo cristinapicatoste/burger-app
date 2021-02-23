@@ -1,0 +1,21 @@
+nav {
+    position: absolute;
+    margin: 30px 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}

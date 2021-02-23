@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './NavBar.module.css';
+import styles from './NavBar.module.css';
 import { Link } from "react-router-dom";
 import * as route from '../../routes/routes';
 
@@ -11,7 +11,7 @@ export const NavBar = () => {
                     <NavLink active={styles["NavBar-activeLink"]} to="/">Burg</NavLink>
                 </li> */}
                 <li>
-                    <Link exact to={route.LANDING}>Home</Link>
+                    <Link exact to={route.LANDING}>Burmet</Link>
                 </li>
                 <li>
                     <Link exact to={route.MENU}>Menu</Link>
