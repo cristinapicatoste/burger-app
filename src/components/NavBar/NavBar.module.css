@@ -1,18 +1,31 @@
-.NavBar {
+nav {
     position: absolute;
     margin: 30px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 
-.NavBar a {
+nav a {
     color: white;
     text-decoration: none;
     margin-right: 30px;
 }
 
-.NavBar a:hover {
+nav a:hover {
     color: rgba(255, 255, 255, 0.678);
     text-decoration: none;
+}
+
+.NavBar-active {
+    font-weight: bold;
+}
+
+.NavBar-fingerIcon {
+    color: white;
+}
+
+.NavBar-fingerIcon:hover {
+    color: rgba(255, 255, 255, 0.678);
 }

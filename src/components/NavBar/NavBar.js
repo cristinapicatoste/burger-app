@@ -2,18 +2,18 @@ import React from 'react';
 import styles from './NavBar.module.css';
 import { NavLink } from "react-router-dom";
 import * as route from '../../routes/routes';
+import FingerprintIcon from '@material-ui/icons/Fingerprint';
 
 export const NavBar = () => {
     return (
-        <nav className={styles["NavBar"]}>
+        <nav>
             <div>
-                <NavLink active={styles["NavBar-activeLink"]} to={route.LANDING}>Bourmet</NavLink>
+                <NavLink exact activeClassName={styles["NavBar-active"]} to={route.LANDING}>Bourmet</NavLink>
+                <NavLink exact activeClassName={styles["NavBar-active"]} to={route.MENU}>Menu</NavLink>
+                <NavLink exact activeClassName={styles["NavBar-active"]} to={route.PROFILE}>My Profile</NavLink>
             </div>
             <div>
-                <NavLink active={styles["NavBar-activeLink"]} to={route.MENU}>Menu</NavLink>
-            </div>
-            <div>
-                <NavLink active={styles["NavBar-activeLink"]} to={route.PROFILE}>My Profile</NavLink>
+                <FingerprintIcon className={styles["NavBar-fingerIcon"]} />
             </div>
         </nav>
     )
