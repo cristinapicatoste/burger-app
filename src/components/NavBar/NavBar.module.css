@@ -1,21 +1,18 @@
-nav {
+.NavBar {
     position: absolute;
     margin: 30px 80px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-nav a {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+.NavBar a {
     color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.NavBar a:hover {
+    color: rgba(255, 255, 255, 0.678);
     text-decoration: none;
 }
